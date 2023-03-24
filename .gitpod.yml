@@ -1,1 +1,8 @@
 image: rocker/verse:4.2.3
+tasks:
+  - command: rstudio-server start
+  
+ports:
+  - port: 8787
+    onOpen: open-preview
+ 
