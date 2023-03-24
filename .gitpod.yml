@@ -1,6 +1,6 @@
 image: rocker/verse:4.2.3
 tasks:
-  - command: rstudio-server start --server-user gitpod
+  - command: sudo rstudio-server start --server-user gitpod
   
 ports:
   - name: RStudio
