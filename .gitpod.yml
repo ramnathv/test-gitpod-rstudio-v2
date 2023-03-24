@@ -1,6 +1,9 @@
 image: rocker/verse:4.2.3
 tasks:
-  - command: sudo rstudio-server start --server-user gitpod
+  - command: |
+      echo "R_LIBS_USER=/home/gitpod/libs" >> /home/gitpod/.Renviron && \
+      echo "session-default-working-dir=/workspace/gitpod-rstudio" | sudo tee -a /etc/rstudio/rsession.conf && \
+      sudo rstudio-server start --server-user gitpod
   
 ports:
   - name: RStudio
