@@ -3,6 +3,7 @@ tasks:
   - command: rstudio-server start
   
 ports:
-  - port: 8787
-    onOpen: open-preview
- 
+  - name: RStudio
+    description: The RStudio Web Server
+    port: 8787
+    onOpen: open-browser
