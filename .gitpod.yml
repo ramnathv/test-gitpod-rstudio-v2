@@ -6,4 +6,4 @@ ports:
   - name: RStudio
     description: The RStudio Web Server
     port: 8787
-    onOpen: open-browser
+    onOpen: open-preview
