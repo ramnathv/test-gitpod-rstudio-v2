@@ -1,5 +1,5 @@
 Package: testgitpodrstudio
-Title: Base Docker image for the Corise Course R for Data Science
+Title: Base Docker image for Testing RStudio on Gitpod
 Version: 0.1.0
 Imports:
     flexdashboard,
