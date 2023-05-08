@@ -1,9 +1,10 @@
-image: rocker/verse:4.3.0
+image:
+  file: .gitpod.Dockerfile
 tasks:
   - command: |
       echo "R_LIBS_USER=/home/gitpod/libs" >> /home/gitpod/.Renviron && \
       echo "session-default-working-dir=/workspace/test-gitpod-rstudio-v2" | sudo tee -a /etc/rstudio/rsession.conf && \
-      echo "gitpod:gitpod" | sudo chpasswd &&\
+      echo "gitpod:gitpod" | sudo chpasswd && \
       sudo rstudio-server start --server-user gitpod
   
 ports:

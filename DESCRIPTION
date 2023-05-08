@@ -1,0 +1,24 @@
+Package: testgitpodrstudio
+Title: Base Docker image for the Corise Course R for Data Science
+Version: 0.1.0
+Imports:
+    flexdashboard,
+    flipbookr,
+    fs,
+    gganimate,
+    gifski,
+    gt,
+    gtExtras,
+    here,
+    hexbin,
+    Hmisc,
+    janitor,
+    leaflet,
+    markdown,
+    plotly,
+    shiny,
+    svglite,
+    statebins,
+    xaringanExtra,
+    xaringanthemer,
+    zoo
